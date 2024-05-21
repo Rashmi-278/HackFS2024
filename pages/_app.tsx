@@ -1,7 +1,8 @@
 import '../styles/globals.css';
 import '@rainbow-me/rainbowkit/styles.css';
 import type { AppProps } from 'next/app';
-
+import { ThemeProvider } from 'styled-components'
+import { ThorinGlobalStyles, lightTheme } from '@ensdomains/thorin'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { WagmiProvider } from 'wagmi';
 import {
@@ -35,7 +36,10 @@ function MyApp({ Component, pageProps }: AppProps) {
     <WagmiProvider config={config}>
       <QueryClientProvider client={client}>
         <RainbowKitProvider>
-          <Component {...pageProps} />
+        <ThemeProvider theme={lightTheme}>
+          <ThorinGlobalStyles />
+             <Component {...pageProps} />
+          </ThemeProvider>
         </RainbowKitProvider>
       </QueryClientProvider>
     </WagmiProvider>
