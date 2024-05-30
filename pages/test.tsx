@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from '@ensdomains/thorin';
-
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -83,7 +82,8 @@ const Description = styled.p`
 `;
 
 const LandingPage: React.FC = () => {
-  return (
+
+return (
     <FlexContainer>
       <BoxContainer>
         <UppercaseText>For DAOs</UppercaseText>
