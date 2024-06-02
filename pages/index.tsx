@@ -2,6 +2,34 @@ import { ConnectButton } from '@rainbow-me/rainbowkit';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import { Button, Card } from '@ensdomains/thorin';
+import styled from 'styled-components';
+import stylesCard from '../styles/DescriptionStyles.module.css';
+
+
+
+const HStackContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: stretch;
+  gap: 1rem; /* Adjust the gap as needed */
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    align-items: center;
+  }
+`;
+
+
+const Description = styled.p`
+  margin-bottom: 16px;
+  color: gray.500;
+
+  @media (min-width: 768px) { /* md breakpoint */
+    font-size: 1.125rem; /* lg */
+  }
+`;
 
 const Home: NextPage = () => {
   return (
@@ -18,61 +46,34 @@ const Home: NextPage = () => {
       <main className={styles.main}>
 
         <h1 className={styles.title}>
-          Adopt the  <a href="">DAO Metadata</a> Standard {' '} <br/>
+          Adopt the  <a href="https://eips.ethereum.org/EIPS/eip-4824">DAO Metadata</a> Standard {' '} <br />
         </h1>
 
-        <p className={styles.description}>
-          Get started by creating and publishing{' '}
-          <a href=''>DAO URI</a>
-        </p>
+        
 
-        <div className={styles.grid}>
-          <a className={styles.card} href="https://rainbowkit.com">
-            <h2>What is DAO Metadata Standard? &rarr;</h2>
-            <p>Learn about EIP-4824</p>
-          </a>
+        <div className={stylesCard.container}>
+      <div className={stylesCard.title}>
+        Get started by creating and publishing{' '}
+        <a href=''>DAO URI</a>
+      </div>
+      <div className={stylesCard.text}>
+      To understand a DAO, you need detailed info on its governance, proposals, members, and activities, typically scattered across various platforms. EIP-4824 addresses this by introducing a daoURI, a URI that consolidates a DAO&apos;s metadata.
+      </div>
+    </div>
 
-          <a className={styles.card} href="https://wagmi.sh">
-            <h2>ENS Pathway of Adoption &rarr;</h2>
-            <p>Learn how you can use ENS to adopt EIP-4824</p>
+       
+        <HStackContainer>
+          <a href="https://docs.daostar.org/How%20To's/DifferentPaths" target='_blank' >
+            <Button colorStyle="purpleSecondary">Lean More</Button></a>
+          <a href="adopt">
+            <Button colorStyle="purpleGradient">Adopt EIP-4824</Button>
           </a>
-
-          <a
-            className={styles.card}
-            href="https://github.com/rainbow-me/rainbowkit/tree/main/examples"
-          >
-            <h2>RainbowKit Examples &rarr;</h2>
-            <p>Discover boilerplate example RainbowKit projects.</p>
-          </a>
-
-          <a className={styles.card} href="https://nextjs.org/docs">
-            <h2>Next.js Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a
-            className={styles.card}
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-          >
-            <h2>Next.js Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            className={styles.card}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        </HStackContainer>
       </main>
 
       <footer className={styles.footer}>
         <a href="https://rainbow.me" rel="noopener noreferrer" target="_blank">
-          Made with ❤️ by your frens at 🌈
+          Made with ❤️ using Nextjs, ENSjs, RainbowKit, IPFS, Thorin Design System
         </a>
       </footer>
     </div>

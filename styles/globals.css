@@ -14,3 +14,120 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+div {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* components/DisplayENSTextRecord.module.css */
+.cardens {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.cardMetadata {
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .cardens {
+    padding: 10px;
+  }
+  
+  .cardMetadata {
+    font-size: 0.875rem;
+  }
+}
+
+.anchor {
+  text-decoration-color: indigo;
+  color: indigo;
+  word-wrap: break-word; /* Ensures long URLs wrap */
+}
+
+/* pages/ExplorerPage.module.css */
+.containerens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh; /* Ensures it takes full viewport height */
+}
+
+@media (max-width: 600px) {
+  .containerens {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 0.875rem;
+  }
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 5px 0;
+  width: 100%;
+}
+
+
+@media (max-width: 600px) {
+  
+  .heading {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* components/RegisterDAOForm.module.css */
+.formContainer {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.formHeader {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.formField {
+  margin-bottom: 15px;
+}
+
+.formButton {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  .formContainer {
+    padding: 10px;
+  }
+
+  .formHeader {
+    font-size: 1.5rem;
+  }
+
+  .formField {
+    margin-bottom: 10px;
+  }
+}

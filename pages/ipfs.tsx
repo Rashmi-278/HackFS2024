@@ -31,7 +31,7 @@ const TestPage = () => {
 
     return (
         <div>
-            <h1>Upload JSON to IPFS</h1>
+            <h1>Upload JSON to IPFS Test</h1>
             <button onClick={uploadToIpfs}>Upload</button>
         </div>
     );
