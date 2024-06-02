@@ -34,7 +34,7 @@ const DomainExplorer: React.FC = () => {
   if (error) return <Typography>Error: {error.message}</Typography>;
 
   return (
-    <div>
+    <div style={{ marginTop:"40px"}}>
       {data.domains.map((domain: any) => (
         <DisplayENSTextRecord
           key={domain.name}

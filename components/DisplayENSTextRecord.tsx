@@ -6,6 +6,7 @@ import { mainnet } from 'viem/chains';
 import { addEnsContracts } from '@ensdomains/ensjs';
 import { getTextRecord } from '@ensdomains/ensjs/public';
 
+
 const client = createPublicClient({
     chain: addEnsContracts(mainnet),
     transport: http(),

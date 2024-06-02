@@ -5,6 +5,7 @@ import client from '../lib/apolloClient';
 import DomainExplorer from '../components/DomainExplorer';
 import { Typography } from '@ensdomains/thorin';
 
+
 const ExplorerPage: React.FC = () => {
   return (
     <ApolloProvider client={client}>
