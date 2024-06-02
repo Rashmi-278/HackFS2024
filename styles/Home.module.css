@@ -31,7 +31,7 @@
 }
 
 .title a {
-  color: #0d76fc;
+  color: purple;
   text-decoration: none;
 }
 
@@ -42,7 +42,8 @@
 }
 
 .title {
-  margin: 3rem 0;
+margin-top: 5rem;
+margin-bottom: 2rem;
   line-height: 1;
   font-size: 2.5rem;
 }
@@ -81,8 +82,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0d76fc;
-  border-color: #0d76fc;
+  color: indigo;
+  border-color: purple;
 }
 
 .card h2 {

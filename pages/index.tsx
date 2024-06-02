@@ -10,7 +10,7 @@ import stylesCard from '../styles/DescriptionStyles.module.css';
 
 const HStackContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin-top: 20px;
   align-items: stretch;
   gap: 1rem; /* Adjust the gap as needed */
@@ -22,14 +22,6 @@ const HStackContainer = styled.div`
 `;
 
 
-const Description = styled.p`
-  margin-bottom: 16px;
-  color: gray.500;
-
-  @media (min-width: 768px) { /* md breakpoint */
-    font-size: 1.125rem; /* lg */
-  }
-`;
 
 const Home: NextPage = () => {
   return (
@@ -45,7 +37,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
 
-        <h1 className={styles.title}>
+        <h1 className={styles.title} >
           Adopt the  <a href="https://eips.ethereum.org/EIPS/eip-4824">DAO Metadata</a> Standard {' '} <br />
         </h1>
 
@@ -65,7 +57,7 @@ const Home: NextPage = () => {
         <HStackContainer>
           <a href="https://docs.daostar.org/How%20To's/DifferentPaths" target='_blank' >
             <Button colorStyle="purpleSecondary">Lean More</Button></a>
-          <a href="adopt">
+          <a href="form">
             <Button colorStyle="purpleGradient">Adopt EIP-4824</Button>
           </a>
         </HStackContainer>
