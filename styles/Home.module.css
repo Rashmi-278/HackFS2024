@@ -102,3 +102,41 @@
     flex-direction: column;
   }
 }
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.cardens {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.cardMetadata {
+  margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+  .cardens {
+    padding: 10px;
+  }
+  
+  .cardMetadata {
+    font-size: 0.875rem;
+  }
+}
+
+.anchor {
+  text-decoration-color: indigo;
+  color: indigo;
+  word-wrap: break-word; /* Ensures long URLs wrap */
+}
