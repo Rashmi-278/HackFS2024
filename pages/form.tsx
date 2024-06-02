@@ -296,7 +296,7 @@ const RegisterDAOForm: React.FC = () => {
         </form>
         {ipfsURL && (
           <Typography style={{ wordWrap: 'break-word', marginTop: '10px' }}>
-            Here's your generated DAO URI: {ipfsURL}
+            Here&apos;s your generated DAO URI: {ipfsURL}
           </Typography>
         )}
       </Card>
